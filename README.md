@@ -114,7 +114,7 @@ Specify unique name for your deployment then select Next
             moxa2019/thingspro-agent:2.0.0-528-armhf 
             ```
 
-- Container Create Options 
+   Container Create Options 
    ![](Media/thingspro-agent-create-container-options.png)
     - Container Create Options:
     ```
@@ -137,7 +137,7 @@ Specify unique name for your deployment then select Next
            mcr.microsoft.com/iotedge/opc-publisher:2.3.0 
             ```
 
-- Container Create Options 
+   Container Create Options 
    ![](Media/opcpublisher-create-container-options.png)
     - Container Create Options:
     ```
@@ -148,4 +148,8 @@ Specify unique name for your deployment then select Next
            ]
     }
     ```
+- Modules
+
+Verify the created modules under the Modules section and select next to define the routes
+![](Media/next-routes.png)
 
