@@ -114,7 +114,6 @@ Specify unique name for your deployment then select Next
             moxa2019/thingspro-agent:2.0.0-528-armhf 
             ```
 
-   Container Create Options 
    ![](Media/thingspro-agent-create-container-options.png)
     - Container Create Options:
     ```
@@ -128,6 +127,7 @@ Specify unique name for your deployment then select Next
           }
     }
     ```
+    
 ## opcpublisher
 - Modules
   ![](Media/add-opcpublisher-module.png)
@@ -137,7 +137,6 @@ Specify unique name for your deployment then select Next
            mcr.microsoft.com/iotedge/opc-publisher:2.3.0 
             ```
 
-   Container Create Options 
    ![](Media/opcpublisher-create-container-options.png)
     - Container Create Options:
     ```
@@ -148,10 +147,41 @@ Specify unique name for your deployment then select Next
            ]
     }
     ```
+    
 - Modules
 
 After you finished adding the iotedge module, you will redirect to the main page where two iotedge modules were added in the list as you can see in the image below  
 ![](Media/next-routes.png)
 
+- Routes
+    ![](Media/add-routes.png)
+    - NAME:
+        ```
+        route
+        ```
+    - VALUE:
+        ```
+        "FROM /messages/* INTO $upstream"
+        ```
+        
+   - NAME:
+        ```
+       opcpublisherToIoTHub
+        ```
+    - VALUE:
+        ```
+        "FROM /messages/modules/opcpublisher/* INTO $upstream "
+        ```
 
+- Target Devices
+   ![](Media/target-device.png)
+    - Target Condition:
+        ```
+        tags.workshop='Microsoft'
+        ``` 
+- Review + create
+   ![](Media/review-and-create.png)
+   
+- Verify IoT Edge Deployment
+   ![](Media/verify-iotedge-deployment.png)
 
