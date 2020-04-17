@@ -3,7 +3,7 @@
 ## This document lists the following steps:
    - Basic Device Setup
    - Cloud Setup
-   - Device Setup Provisioning Tool
+   - Setup Provisioning Tool
    - Data Setup
    - Monitor OPC-UA D2C Telemetry data on Azure IoT Hub
 
@@ -185,3 +185,4 @@ After you finished adding the iotedge module, you will redirect to the main page
 - Verify IoT Edge Deployment
    ![](Media/verify-iotedge-deployment.png)
 
+# Setup Provisioning Tool
