@@ -91,5 +91,61 @@ Please use the url below to set up a DPS on azure portal. The url includes three
 https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision
 ```
 
-## Configure IotEdge Auto-Deploment using Azure portal
+## Configure IoT Edge Auto-Deploment using Azure portal
+
+- Create IoT Edge Deployment
+ ![](Media/create-iotedge-deployment.png)
+ 
+- Name and Label
+
+Specify unique name for your deployment then select Next
+ ![](Media/name-and-label.png)
+ 
+
+ ## thingspro-agent
+ 
+> Note: Here we add total two modules for our deployment, one thingspro-agent a system module for device management for Moxa UC-8112A IIOT gateway and second microsoft opcpublisher module for data acquisition
+
+- Modules
+  ![](Media/add-thingspro-agent-module.png)
+  - Image URI:
+      - armhf:
+            ```
+            moxa2019/thingspro-agent:2.0.0-528-armhf 
+            ```
+
+- Container Create Options 
+   ![](Media/thingspro-agent-create-container-options.png)
+    - Container Create Options:
+    ```
+    {
+         "HostConfig": {
+             "Binds": [
+                 "/var/thingspro/apps/cloud/data/setting/:/var/thingspro/cloudsetting/",
+                 "/run/:/host/run/",
+                 "/var/thingspro/data/:/var/thingspro/data/"
+              ]
+          }
+    }
+    ```
+## opcpublisher
+- Modules
+  ![](Media/add-opcpublisher-module.png)
+  - Image URI:
+       - armhf:
+            ```
+           mcr.microsoft.com/iotedge/opc-publisher:2.3.0 
+            ```
+
+- Container Create Options 
+   ![](Media/opcpublisher-create-container-options.png)
+    - Container Create Options:
+    ```
+    {
+         "Hostname": "publisher",
+          "Cmd": [
+             "--aa"
+           ]
+    }
+    ```
 
