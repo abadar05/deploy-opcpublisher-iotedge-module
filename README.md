@@ -150,6 +150,8 @@ Specify unique name for your deployment then select Next
     ```
 - Modules
 
-Verify the created modules under the Modules section and select next to define the routes
+After you finished adding the iotedge module, you will redirect to the main page where two iotedge modules were added in the list as you can see in the image below  
 ![](Media/next-routes.png)
+
+
 
