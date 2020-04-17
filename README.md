@@ -210,9 +210,11 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
 > Note: By deafult the VM is configured 2048 MB RAM, you can reduce the size of the RAM or leave as default settings. Please be patience it takes a few minutes for ova file to be imported. Once the ova file has imported successfully you can start the VM.  
 
 - Start VM
+  
+  Default username/password:  osboxes/osboxes.org
   ![](Media/virtualbox-debain-image.png)
 
-- Default username/password:  osboxes/osboxes.org
+
 
 - Set VirtualHost Adpater Static IP
   ![](Media/virtualhost-set-static-ip-address.png)
