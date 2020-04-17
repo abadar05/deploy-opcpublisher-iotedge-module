@@ -209,12 +209,41 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
 
 > Note: By deafult the VM is configured 2048 MB RAM, you can reduce the size of the RAM or leave as default settings. Please be patience it takes a few minutes for ova file to be imported. Once the ova file has imported successfully you can start the VM.  
 
+- Set VirtualHost Adpater Static IP
+  ![](Media/virtualhost-set-static-ip-address.png)
+
 - Start VM
   
   Default username/password:  osboxes/osboxes.org
   ![](Media/virtualbox-debain-image.png)
 
+## Download and Install OPC UaExperrt Client (optional)
+  The OPC-UA expert software available free from the OPC foundation, by using the OPC-UA client you can browse the address space (Node IDs) of OPC-UA server, read/write data, copy node ID of specific variable and etc. Please check OPC-UA website for further details. 
+  
+  Please use the following link to download the software.
+  
+ > Note: You might need to create an account in order to download the software
+  
+   ```
+  https://www.unified-automation.com/downloads/opc-ua-clients.html
+   ```
+   
+ - Setup Connection
+ 
+   Codesys SoftPLC OPC-UA Server IP: 192.168.2.31  
+   
+   ![](Media/connect-to-opcua-server.png)
 
+- Discover OPC-UA 
 
-- Set VirtualHost Adpater Static IP
-  ![](Media/virtualhost-set-static-ip-address.png)
+   ![](Media/discover-opcua-server.png)
+   
+- Connected to the Server
+
+   ![](Media/connected-to-opcua-server-successfully.png)
+   
+- Browse Address Space OPCUA Server
+
+    ![](Media/browse-opcua-server-address-space.png)
+    
+    
