@@ -91,5 +91,5 @@ Please use the url below to set up a DPS on azure portal. The url includes three
 https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision
 ```
 
-## Setup a Auto IotEdge Deploment using Azure portal
+## Configure IotEdge Auto-Deploment using Azure portal
 
