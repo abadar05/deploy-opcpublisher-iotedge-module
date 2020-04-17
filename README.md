@@ -186,3 +186,31 @@ After you finished adding the iotedge module, you will redirect to the main page
    ![](Media/verify-iotedge-deployment.png)
 
 # Setup Provisioning Tool
+
+# Data Setup 
+
+## Download and Install Orcale Virtual box for your OS
+ ```
+https://www.virtualbox.org/wiki/Downloads
+ ```
+
+## Download pre-built Debian VM Open Virtualization Appliance (.ova) file running Codesys OPC-UA server 
+ ```
+https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5G805qXC7Eo0KkhA?e=yzXMnM
+ ```
+
+## Import .ova file using Virtual Box
+
+- Import Appliance
+  ![](Media/virtualbox-file-import-alliance.png)
+
+- Appliance Settings
+  ![](Media/virtualbox-appliance-settings.png)
+
+> Note: By deafult the VM is configured 2048 MB RAM, you can reduce the size of the RAM or leave as default settings. Please be patience it takes a few minutes for ova file to be imported. Once the ova file has imported successfully you can start the VM.  
+
+- Start VM
+  ![](Media/virtualbox-debain-image.png)
+
+- Default username/password:  osboxes/osboxes.org
+
