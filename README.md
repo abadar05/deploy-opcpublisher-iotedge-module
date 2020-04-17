@@ -214,3 +214,5 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
 
 - Default username/password:  osboxes/osboxes.org
 
+- Set VirtualHost Adpater Static IP
+  ![](Media/virtualhost-set-static-ip-address.png)
