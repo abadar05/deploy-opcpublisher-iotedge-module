@@ -1,4 +1,4 @@
-# Connecting Industrial OPC-UA PLCs to azure iot hub using Moxa UC-8112A IIoT Gateway running Microsoft OPCpublisher Container (Azure IoT Edge + ThingsPro Edge)
+# Connecting OPC-UA PLCs to azure iot hub using Moxa UC-8112A IIoT Gateway running Microsoft OPCpublisher Container (Azure IoT Edge + ThingsPro Edge)
 
 ## This document lists the following steps:
    - Basic Device Setup
@@ -234,7 +234,7 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
    
    ![](Media/connect-to-opcua-server.png)
 
-- Discover OPC-UA 
+- Discover OPC-UA Server
 
    ![](Media/discover-opcua-server.png)
    
@@ -242,7 +242,7 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
 
    ![](Media/connected-to-opcua-server-successfully.png)
    
-- Browse Address Space OPCUA Server
+- Browse Address Space OPC-UA Server
 
     ![](Media/browse-opcua-server-address-space.png)
     
