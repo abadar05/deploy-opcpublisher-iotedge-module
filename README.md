@@ -196,7 +196,7 @@ Discover and enroll IIoT devices on your designated Azure IoT Hub using Moxa Pro
   https://moxa-my.sharepoint.com/:u:/p/amjad_badar/EWsKcxcRjlVKju6DH7Tee8YBGX0cBnzgX1csIGhTTHo-Kw?e=nWfM4Z
   ```
 
-## Provisioning Enviornment 
+## Setup Provisioning Enviornment 
 
 ![](Media/provisioning-enviornment.png)
 
