@@ -190,6 +190,12 @@ After you finished adding the iotedge module, you will redirect to the main page
 
 Discover and enroll IIoT devices on your designated Azure IoT Hub using Moxa Provision Tool
 
+## Download Provisioning Tool from the URL below and modify the config file with your Azure IoT Hub and DPS
+
+  ```
+  https://moxa-my.sharepoint.com/:u:/p/amjad_badar/EWsKcxcRjlVKju6DH7Tee8YBGX0cBnzgX1csIGhTTHo-Kw?e=nWfM4Z
+  ```
+
 ## Provisioning Enviornment 
 
 ![](Media/provisioning-enviornment.png)
