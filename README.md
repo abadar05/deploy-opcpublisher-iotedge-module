@@ -4,6 +4,7 @@
    - Basic Device Setup
    - Cloud Setup
    - Setup Provisioning Tool
+   - Verify Modules on UC-8112A IIoT Gateway
    - Data Setup
    - Monitor OPC-UA D2C Telemetry data on Azure IoT Hub
 
@@ -186,6 +187,102 @@ After you finished adding the iotedge module, you will redirect to the main page
    ![](Media/verify-iotedge-deployment.png)
 
 # Setup Provisioning Tool
+
+Discover and enroll IIoT devices on your designated Azure IoT Hub using Moxa Provision Tool
+
+## Provisioning Enviornment 
+
+![](Media/provisioning-enviornment.png)
+
+> Note: Make sure that notebook is connected on same the local network as shown in the topology. The discovery service works only on LAN1 on UC-8112A IIoT gateway.
+
+## Provision Tool
+
+- Modify Configuration File
+    ```
+    {
+        "steps": [
+            {
+            "target": "Predefined",
+            "description": "",
+            "path": "",
+            "method": "provision iot edge using dps",
+            "post": {
+                "scope": "{Service Endpoint of DPS}",
+                "keyName": "{Shared Access Policy}",
+                "key": "{Shared Access keys}",
+                "scopeId": "{ID Scope of DPS}",
+                "iotHubHostName": "{Target IoT Hub}",
+                "initialTwin": {
+                "properties": {},
+                "tags": {
+                    "{Key}": "{Value}"
+                }
+                },
+                "generateDownstreamCertificate": true,
+                "enableIoTEdge": true
+            }
+            }
+        ]
+    }
+    ```
+
+- Device Discovery 
+
+  ![](Media/1-device-discovery.png)
+
+- Select Target Devices  
+
+  ![](Media/2-select-target-device.png)
+
+- Provide Device Credential and Specify Provision Configuration   
+
+  ![](Media/3-specifiy-device-credentials-and-select-config-file.png)
+
+- Provision
+
+  ![](Media/4-status-enrolnment.png)
+
+> Note: The provision tool automatically retrieves the Registration ID (SN of the device) and Endorsement key of UC-8112A gateway
+
+- Verifying the device enrollment status on Azure DPS  
+
+  ![](Media/5-status-dps-enrollnments.png)
+
+- Verifying the device registration status on Azure DPS
+
+  ![](Media/5-dps-registration-status.png)
+
+- Verifying the device registration status on Azure IoT Hub  
+
+  ![](Media/6-status-iotedgehub.png)
+
+> Note: Device ID is the serial number of the Moxa UC-8112A IIoT gateway
+
+- Check status IoTEdge Deployment 
+  
+  As you can see in the figure below under "System Metrics"column the deployment has been successfully applied to the device 
+  
+  ![](Media/7-status-iotedge-deployment.png)
+
+- Check IoTEdge device Module Runtime Status 
+
+  ![](Media/8-status-module-runtime.png)
+  
+> Note: After successfull deployment the iotedge device pull the module images specified in the deployment manifest and start the container from the image. This takes 4~5 minutes depending on the network speed. The iot edge device sends the status updates via reported properties to azure iot hub.
+
+# Verify Modules on UC-8112A IIoT Gateway
+
+## Connect the gateway via Local Web GUI 
+
+Default credentials 
+  - username/password:  admin/admin@123
+
+![](Media/9-login-local-webgui.png)
+
+## Azure IoT Edge
+ ![](Media/10-azureiotedge-local-web-gui-module-list.png)
+
 
 # Data Setup 
 
