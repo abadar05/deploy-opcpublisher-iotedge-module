@@ -249,7 +249,7 @@ Discover and enroll IIoT devices on your designated Azure IoT Hub using Moxa Pro
 
   ![](Media/4-status-enrolnment.png)
 
-> Note: The provision tool automatically retrieves the Registration ID (SN of the device) and Endorsement key of UC-8112A gateway
+> Note: The provision tool automatically retrieves the Registration ID (SN of the device) and TPM Endorsement key of UC-8112A gateway
 
 - Verifying the device enrollment status on Azure DPS  
 
@@ -320,7 +320,7 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
   Default username/password:  osboxes/osboxes.org
   ![](Media/virtualbox-debain-image.png)
 
-## Download and Install OPC UaExperrt Client (optional)
+## Download and Install OPC UaExpert Client (optional)
   The OPC-UA expert software available free from the OPC foundation, by using the OPC-UA client you can browse the address space (Node IDs) of OPC-UA server, read/write data, copy node ID of specific variable and etc. Please check OPC-UA website for further details. 
   
   Please use the following link to download the software.
