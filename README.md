@@ -348,4 +348,37 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
 
     ![](Media/browse-opcua-server-address-space.png)
     
+
+## Invoke Direct Method from Azure IoT Hub
+
+- Select opcpublisher module from the module list on your iotedge device
+
+   ![](Media/a-select-opcpublisher-from-module-list.png)
+   
+- Select Direct Method
+
+   ![](Media/b-select-direct-method.png)
+   
+- Invoke Direct Method 
+     
+     - Method Name:
+        ```
+        PublishNodes
+        ```
+    - Payload:
+        ```
+        {
+               "OpcNodes": [
+              {
+                   "Id": "ns=4;s=|var|CODESYS Control for Linux SL.Application.PLC_PRG.Lamp_output",
+                   "OpcSamplingInterval": 1000,
+                   "OpcPublishingInterval": 1000
+              }
+              ],
+             "EndpointUrl": "opc.tcp://192.168.2.31:4840",
+             "UseSecurity": false
+         }
+        ```
+        
+   ![](Media/c-Invoke-direct-method.png)
     
