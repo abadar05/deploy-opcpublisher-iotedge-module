@@ -345,7 +345,12 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
    ![](Media/connected-to-opcua-server-successfully.png)
    
 - Browse Address Space OPC-UA Server
-
+  
+  The opcua server contains a small program to simulate the lamp output by changing the switch value (boolean). 
+  When switch value is True the lamp output will be turned on and vice versa. 
+  
+  Copy the NodeID of the lamp_output variable and use this in the payload of the invoke direct method in the next section. 
+  
     ![](Media/browse-opcua-server-address-space.png)
     
 
