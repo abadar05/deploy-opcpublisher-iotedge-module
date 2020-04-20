@@ -94,6 +94,8 @@ https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision
 
 ## Configure IoT Edge Auto-Deploment using Azure portal
 
+ > Note: Here we add total two modules for our deployment, one thingspro-agent a system module for device management for Moxa UC-8112A IIOT gateway and second microsoft opcpublisher module for data acquisition
+
 - Create IoT Edge Deployment
  ![](Media/create-iotedge-deployment.png)
  
@@ -102,11 +104,8 @@ https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision
 Specify unique name for your deployment then select Next
  ![](Media/name-and-label.png)
  
-
  ## thingspro-agent
  
-> Note: Here we add total two modules for our deployment, one thingspro-agent a system module for device management for Moxa UC-8112A IIOT gateway and second microsoft opcpublisher module for data acquisition
-
 - Modules
   ![](Media/add-thingspro-agent-module.png)
   - Image URI:
