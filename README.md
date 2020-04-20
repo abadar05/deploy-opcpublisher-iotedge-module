@@ -6,7 +6,7 @@
    - Setup Provisioning Tool
    - Verify Modules on UC-8112A IIoT Gateway
    - Data Setup
-   - Monitor OPC-UA D2C Telemetry data on Azure IoT Hub
+   - Monitor OPC-UA Server D2C Telemetry data from Azure IoT Hub
 
 # Basic Device Setup
 
@@ -387,3 +387,9 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
         
    ![](Media/c-Invoke-direct-method.png)
     
+# Monitor OPC-UA Server D2C Telemetry data from Azure IoT Hub
+
+## Download and Install Azure IoT Explorer (.MSI)
+```sh
+https://github.com/Azure/azure-iot-explorer/releases
+```
