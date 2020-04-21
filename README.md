@@ -365,6 +365,8 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
    ![](Media/b-select-direct-method.png)
    
 - Invoke Direct Method 
+
+  ![](Media/c-Invoke-direct-method.png)
      
      - Method Name:
         ```
@@ -385,7 +387,7 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
          }
         ```
         
-   ![](Media/c-Invoke-direct-method.png)
+ 
     
 # Monitor OPC-UA Server D2C Telemetry data from Azure IoT Hub
 
@@ -393,3 +395,8 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
 ```sh
 https://github.com/Azure/azure-iot-explorer/releases
 ```
+## Use Azure IoT Explorer to Monitor D2C telemetry data
+![](Media/monitor-lamp_output.png)
+
+## Modify OPC-UA Server Switch value 
+![](Media/modify-lamp-output.png)
