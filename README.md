@@ -315,6 +315,10 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
   ![](Media/virtualhost-set-static-ip-address.png)
 
 - Start VM
+  > Note: The OPC-UA server will starts automatically when you start the Virtual Machine
+  
+  The opcua server contains a small PLC program which includes one digital input (Switch) and digital output (Lamp). 
+  You can connect to the OPC-UA server locally by using the OPC client UaExpert software as shown in the next section. 
   
   Default username/password:  osboxes/osboxes.org
   ![](Media/virtualbox-debain-image.png)
@@ -346,10 +350,7 @@ https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5
    
 - Browse Address Space OPC-UA Server
   
-  The opcua server contains a small program to simulate the lamp output by changing the switch value (boolean). 
-  When switch value is True the lamp output will be turned on and vice versa. 
-  
-  Copy the NodeID of the lamp_output variable and use this in the payload of the invoke direct method in the next section. 
+  Copy NodeID of the lamp_output variable and use this in the payload of the invoke direct method in the next section. 
   
     ![](Media/browse-opcua-server-address-space.png)
     
@@ -399,4 +400,6 @@ https://github.com/Azure/azure-iot-explorer/releases
 ![](Media/monitor-lamp_output.png)
 
 ## Modify OPC-UA Server Switch value 
+The opcpublisher module doesn't publish the same data to the IoT Hub rather it publish data on changes. In order to see the lamp_output on change, force the switch input on UaExpert and verify the corresponding output using azure iot explorer as shown in the image below. 
+
 ![](Media/modify-lamp-output.png)
