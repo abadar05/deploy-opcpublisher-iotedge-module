@@ -44,7 +44,7 @@ dhclient eth0
 - armhf:
     ```sh
     wget https://thingspro.blob.core.windows.net/software/edge/V2.0.0/update_2.0.0-1579-uc-8112a-me-iotedge_armhf.deb
-    dpkg -i ./update_2.0.0-1511-uc-8112a-me-iotedge_armhf.deb
+    dpkg -i ./update_2.0.0-1579-uc-8112a-me-iotedge_armhf.deb
     ```
 ## Download and Install ThingsPro Edge V2.0.0 on UC-8112A without Internet
 Click on the url below or copy url it on your web browser which starts downloading thingspro software, it takes 10~12 minutes depending the network speed of your internet connection. 
@@ -61,7 +61,7 @@ https://winscp.net/eng/download.php
  ```
  - armhf:
      ```sh
-     dpkg -i ./update_2.0.0-1511-uc-8112a-me-iotedge_armhf.deb
+     dpkg -i ./update_2.0.0-1579-uc-8112a-me-iotedge_armhf.deb
      ```
 
 ## Update the Installation Process
