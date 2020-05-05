@@ -25,7 +25,7 @@ If the unit has been installed prior, we should reset it back to default before 
 mx-set-def
 ```
 
-> Note: Make sure to have a console cable conected to the device or login via ssh
+> Note: Make sure to have a console cable connected to the device or login via ssh
 
 Remove docker folder
 ```sh
