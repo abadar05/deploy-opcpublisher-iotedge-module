@@ -205,7 +205,8 @@ Discover and enroll IIoT devices on your designated Azure IoT Hub using Moxa Pro
 
 - Modify Configuration File
     ```
-    {
+    {   
+        "environment": "prod",
         "steps": [
             {
             "target": "Predefined",
