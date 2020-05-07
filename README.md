@@ -194,7 +194,7 @@ Discover and enroll IIoT devices on your designated Azure IoT Hub using Moxa Pro
 ## Download Provisioning Tool from the given url 
 
   ```
-  https://moxa-my.sharepoint.com/:u:/p/amjad_badar/EWsKcxcRjlVKju6DH7Tee8YBGX0cBnzgX1csIGhTTHo-Kw?e=nWfM4Z
+ https://moxaeuiiot.blob.core.windows.net/moxaiiotworkshop/ProvisionTool-20200507.rar
   ```
 
 ## Setup Provisioning Enviornment 
