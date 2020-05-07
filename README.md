@@ -301,7 +301,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 ## Download pre-built Debian VM Open Virtualization Appliance (.ova) file running Codesys OPC-UA server 
  ```
-https://moxa-my.sharepoint.com/:u:/p/amjad_badar/Ebq22gjUqfdNoxT3PZtoQjcBMlp8zx5G805qXC7Eo0KkhA?e=yzXMnM
+https://moxaeuiiot.blob.core.windows.net/moxaiiotworkshop/Debian10-opcua-server.ova
  ```
 
 ## Import .ova file using Virtual Box
