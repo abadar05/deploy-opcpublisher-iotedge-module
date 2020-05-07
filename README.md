@@ -74,6 +74,8 @@ journalctl -u update -f
 
 > Note: The entire process will take about ~11 minutes depends on the hardware/model. When it shows "Stopped MOXA ThingsPro Updater", you can reboot the device by command listed below. The SSH service will be disabled after TPE is installed. 
 
+>Hint: To enable the SSH service again, please login via local web GUI and enable it from the service enablement option.
+
 ## Reboot Device
 ```sh
 sudo reboot
