@@ -156,7 +156,7 @@ After you finished adding the iotedge module, you will redirect to the main page
 ![](Media/next-routes.png)
 
 - Routes
-    ![](Media/add-routes.png)
+    ![](Media/add-routes-modified.png)
     - NAME:
         ```
         route
