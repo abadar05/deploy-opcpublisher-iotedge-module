@@ -166,14 +166,6 @@ After you finished adding the iotedge module, you will redirect to the main page
         "FROM /messages/* INTO $upstream"
         ```
         
-   - NAME:
-        ```
-       opcpublisherToIoTHub
-        ```
-    - VALUE:
-        ```
-        "FROM /messages/modules/opcpublisher/* INTO $upstream "
-        ```
 
 - Target Devices
    ![](Media/target-device.png)
